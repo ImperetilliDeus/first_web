@@ -29,6 +29,7 @@
       box-sizing: border-box;
       border-right: 1px solid gray;
       display: inline;
+      position: fixed;
     }
     .sidebar_grid {
       width: 100%;
@@ -40,7 +41,6 @@
       margin-top:20px;
       margin-left: 10px;
       display: inline;
-     
     }
     .content_grid {
       width: 100%;
@@ -64,4 +64,17 @@
     address {
       text-align: right;
       color: gray;
+    }
+    #side_img {
+      position: fixed;
+      bottom: 0px;
+      left: 8px;
+    }
+    #sicar {
+      font-size:15px;
+      opacity: 0.5;
+      margin-top:40px;
+      margin-bottom:0;
+      padding:0;
+      color:white;
     }
