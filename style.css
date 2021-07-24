@@ -8,7 +8,7 @@
 }
     #main_content{
       display: grid;
-      grid-template-rows: 100px minmax(1080px, auto);
+      grid-template-rows: 80px minmax(1080px, auto);
     }
     #layout{
       display: grid;
@@ -21,30 +21,33 @@
       background-color:midnightblue;
       font-family: "Neothic", Times, serif;
       font-size: 35px;
-      width: 300px;
+      width: 308px;
       height: 100%;
       text-align: center;
       margin:0;
       padding: 0;
       box-sizing: border-box;
       border-right: 1px solid gray;
+      left:0;
+      top:0;
       display: inline;
       position: fixed;
     }
     .sidebar_grid {
       width: 100%;
       height: 80px;
-
+      top:0;
       box-sizing: border-box;
       text-align: center;
       border-bottom:solid 1px gray;
-      margin-top:20px;
-      margin-left: 10px;
       display: inline;
+      position: fixed;
+      background-color: darkred;
+      line-height: 40px;
     }
     .content_grid {
       width: 100%;
-
+      padding-top:40px;
       text-align: center;
       box-sizing: border-box;
       margin-top:20px;
@@ -55,6 +58,9 @@
       display: inline-block;
       margin-right: 100px;
       font-family: "KoPubWorld돋움체_Pro Medium", Arial, sans-serif;
+    }
+    li a{
+        color:white;
     }
     footer {
       border-top: 2px solid black;
@@ -68,7 +74,7 @@
     #side_img {
       position: fixed;
       bottom: 0px;
-      left: 8px;
+      left:0;
     }
     #sicar {
       font-size:15px;
