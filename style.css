@@ -1,0 +1,58 @@
+@FONT-FACE {
+	font-family: 'Neothic';
+	src:url("Neothic.ttf");
+}
+@FONT-FACE {
+	font-family: 'KoPubWorld돋움체_Pro Medium';
+	src:url("KoPubWorld Dotum_Pro Medium.otf");
+}
+    #main_content{
+      display: grid;
+      grid-template-rows: 100px 1fr;
+    }
+    #layout{
+      display: grid;
+      grid-template-columns: 300px 1fr;
+    }
+    body{
+      background-color: linen;
+    }
+    .title_grid {
+      background-color:midnightblue;
+      font-family: "Neothic", Times, serif;
+      font-size: 35px;
+      width: 300px;
+      height: 100%;
+      text-align: center;
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+      border-right: 1px solid gray;
+      display: inline;
+    }
+    .sidebar_grid {
+      width: 100%;
+      height: 80px;
+
+      box-sizing: border-box;
+      text-align: center;
+      border-bottom:solid 1px gray;
+      margin-top:20px;
+      margin-left: 10px;
+      display: inline;
+     
+    }
+    .content_grid {
+      width: 100%;
+
+      text-align: center;
+      box-sizing: border-box;
+      margin-top:20px;
+      margin-left: 10px;
+      font-family: "KoPubWorld돋움체_Pro Medium", Arial, sans-serif;
+    }
+    li {
+      display: inline-block;
+      margin-right: 100px;
+      font-family: "KoPubWorld돋움체_Pro Medium", Arial, sans-serif;
+    }
