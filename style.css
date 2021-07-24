@@ -56,3 +56,12 @@
       margin-right: 100px;
       font-family: "KoPubWorld돋움체_Pro Medium", Arial, sans-serif;
     }
+    footer {
+      border-top: 2px solid black;
+      margin-top: 10px;
+      padding: 20px;
+    }
+    address {
+      text-align: right;
+      color: gray;
+    }
