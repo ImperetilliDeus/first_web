@@ -6,6 +6,37 @@
 	font-family: 'KoPubWorld돋움체_Pro Medium';
 	src:url("KoPubWorld Dotum_Pro Medium.otf");
 }
+@media(max-width:800px){
+  #sicar {
+    font-size:15px;
+    opacity: 0.5;
+    margin-top:20px;
+    margin-bottom:0;
+    padding:0;
+    color:white;
+  }
+  .title_grid {
+    background-color:midnightblue;
+    font-family: "Neothic", Times, serif;
+    font-size: 35px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border-right: 1px solid gray;
+  }
+  #layout{
+    display: grid;
+    grid-template-rows: 200px 1fr;
+  }
+  body{
+    background-color: linen;
+  }
+}
+@media(min-width:800px){
+  
     #main_content{
       display: grid;
       grid-template-rows: 80px minmax(1080px, auto);
@@ -84,3 +115,4 @@
       padding:0;
       color:white;
     }
+  }
