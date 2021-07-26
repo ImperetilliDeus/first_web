@@ -26,13 +26,72 @@
     padding: 0;
     box-sizing: border-box;
     border-right: 1px solid gray;
+    left:0;
+    top:0;
+    right:0;
+    position: fixed;
   }
+  #title{
+    display:none;
+  }
+  #title2{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+
+  }
+  .sidebar_grid {
+    width: 100%;
+    height: 80px;
+    top:0;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom:solid 1px gray;
+    display: block;
+    background-color: darkred;
+    line-height: 80px;
+    margin:0;
+    left:0;
+    top:200px;
+    right:0;
+    position: fixed;
+  }
+ li {
+    display: inline;
+    list-style: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "KoPubWorld돋움체_Pro Medium", Arial, sans-serif;
+    
+  }
+  li a{
+    color:white;
+    text-decoration:none;
+    text-align: center;
+}
+ul{
+  margin:0;
+  text-align: center;
+}
   #layout{
     display: grid;
     grid-template-rows: 200px 1fr;
   }
   body{
     background-color: linen;
+  }
+  .content_grid {
+    width: 100%;
+    padding-top:40px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top:20px;
+    margin-left: 10px;
+    font-family: "KoPubWorld돋움체_Pro Medium", Arial, sans-serif;
+  }
+  #side_img {
+    display: none;
   }
 }
 @media(min-width:800px){
@@ -64,6 +123,12 @@
       display: inline;
       position: fixed;
     }
+    #title{
+      display:block;
+    }
+    #title2{
+      display:none;
+    }
     .sidebar_grid {
       width: 100%;
       height: 80px;
@@ -87,11 +152,17 @@
     }
     li {
       display: inline-block;
-      margin-right: 100px;
+      list-style: none;
       font-family: "KoPubWorld돋움체_Pro Medium", Arial, sans-serif;
     }
     li a{
         color:white;
+        text-decoration:none;
+    }
+    ul{
+      padding:0;
+
+      text-align: center;
     }
     footer {
       border-top: 2px solid black;
