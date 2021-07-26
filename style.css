@@ -106,7 +106,21 @@ ul{
     }
     body{
       background-color: linen;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
+    /* 스크롤바 변경 참고 https://codingbroker.tistory.com/66 */
+    body::-webkit-scrollbar{
+      width: 16px;
+    }
+    body::-webkit-scrollbar-thumb{
+      background-color: teal;
+      height: 56px;
+      border-radius: 8px;
+      background-clip: padding-box;
+      border: 2px solid transparent;
+    } 
+    
     .title_grid {
       background-color:midnightblue;
       font-family: "Neothic", Times, serif;
@@ -136,7 +150,7 @@ ul{
       box-sizing: border-box;
       text-align: center;
       border-bottom:solid 1px gray;
-      display: inline;
+      display: inline-block;
       position: fixed;
       background-color: darkred;
       line-height: 40px;
@@ -149,11 +163,14 @@ ul{
       margin-top:20px;
       margin-left: 10px;
       font-family: "KoPubWorld돋움체_Pro Medium", Arial, sans-serif;
+      
     }
     li {
       display: inline-block;
       list-style: none;
       font-family: "KoPubWorld돋움체_Pro Medium", Arial, sans-serif;
+      margin-right: 50px;
+      margin-left: 50px;
     }
     li a{
         color:white;
@@ -161,8 +178,7 @@ ul{
     }
     ul{
       padding:0;
-
-      text-align: center;
+      margin-right: 220px;
     }
     footer {
       border-top: 2px solid black;
